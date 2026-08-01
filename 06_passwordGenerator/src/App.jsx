@@ -7,7 +7,7 @@ function App() {
   const [charAllow, setCharAllow] = useState(false);
   const [password, setPassword] = useState("");
 
-  const passwordRef = useRef();
+  const passwordRef = useRef(null);
 
   const copyToClipboard = () => {
     window.navigator.clipboard.writeText(password);
